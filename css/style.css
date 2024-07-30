@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+html * {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.wrapper {
+    margin: 0 auto 0 30px;
+    max-width: 960px;
+}
+h1 {
+    color: white;
+    background-color: orange;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 35px;
+}
+.main-Question {
+    font-size: 20px;
+    p{
+        margin-left: 15px;
+    }
+    
+}
+.sub-Question{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+    margin-left: 15px;
+    position: relative;
+    
+}
+.option{
+    width: 8em;
+    height: 4em;
+    font-size: 15px;
+    margin-top: 2em;
+    margin-left: 15px;
+    margin-right: 30px;
+    background-color: aliceblue;
+}
+.option:hover{
+    opacity: 0.6;
+}
+.option:active {
+    opacity: 1.0;
+}
+.popup{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+.answer{
+    display:inline;
+}
+.count{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 15px;
+}
+.answer_cnt, .answer_rate{
+    margin-left: 15px;
+}
+
+/*スマホ向けcss*/
+@media (max-width: 767px){
+    .wrapper{
+        margin: 0 8px;
+    }
+    h1{
+        font-size: 2em;
+    }
+}

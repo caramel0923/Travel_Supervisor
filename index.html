@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>旅行管理業務取扱管理者 単語テスト（温泉地編）</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                <h1>国内旅行業務取扱管理者　単語テスト（温泉地編）</h1>
+            </div>
+            <div class="main-Question">
+                <b>問題</b>
+                <p>以下の温泉地はどこの都道府県にある？</p>
+            </div>
+            <div class="sub-Question" id="Question">
+                <p>問題文</p>
+            </div>
+            <div class="popup" id="popup">
+                <img id="popup_img" src="image/maru.png" width="120px" alt="">
+                <p id="popup_let">正解</p>
+                <b class="answer">答え：</b>
+                <p class="answer" id="answer"></p>
+            </div>
+            <div class="button">
+                <button class="option" id="option_1" onclick="Ans(1)">選択肢1</button>
+                <button class="option" id="option_2" onclick="Ans(2)">選択肢2</button>
+                <button class="option" id="option_3" onclick="Ans(3)">選択肢3</button>
+                <button class="option" id="option_4" onclick="Ans(4)">選択肢4</button>
+            </div>
+            <div class="count">
+                <div class="Question_cnt" id="Question_cnt"><p></p></div>
+                <div class="answer_cnt" id="answer_cnt"><p></p></div>
+                <div class="answer_rate" id="answer_rate"><p></p></div>
+            </div>
+        </div>
+    </body>
+</html>
